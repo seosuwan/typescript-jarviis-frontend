@@ -52,7 +52,7 @@ const historySlice = createSlice({
     name: "histories",
     initialState,
     reducers: {
-        historyRequest(state: HistoryState, action: PayloadAction<HistoryPayload>){
+        historyRequest(state: HistoryState, _action: PayloadAction<HistoryPayload>){
             alert("여기 누구있어요?")
             state.historyLoading = true;
             state.error = null;
