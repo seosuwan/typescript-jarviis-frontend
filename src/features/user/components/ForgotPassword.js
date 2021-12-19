@@ -12,6 +12,7 @@ import _ from '@lodash';
 import { LayOut } from 'features/common';
 import React, { useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import 'features/user/style/UserFGPassword.scss'
 // import { modify } from 'features/user/reducer/userSlice'
 /**
  * Form Validation Schema
@@ -42,17 +43,15 @@ function ForgotPassword() {
 
   return (
       <LayOut>
-    <div className="flex flex-col flex-auto items-center justify-center p-16 sm:p-32">
-      <div className="flex flex-col items-center justify-center w-full">
+    <div className='User-forgotPassword'>
+      <div>
         <motion.div initial={{ opacity: 0, scale: 0.6 }} animate={{ opacity: 1, scale: 1 }}>
-          <Card className="w-full max-w-384">
+          <Card >
             <CardContent className="flex flex-col items-center justify-center p-16 sm:p-24 md:p-32">
-              <img className="w-128 m-32" src="assets/images/logos/fuse.svg" alt="logo" />
-
               <Typography variant="h6" className="mt-16 mb-24 font-semibold text-18 sm:text-24">
-                Recover your password
+                비밀번호 찾기
               </Typography>
-
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <form method= 'PUT' onSubmit= {useCallback(
                 e => {
                   e.preventDefault()
@@ -75,7 +74,7 @@ function ForgotPassword() {
                     />
                   )}
                 />
-
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
                 <Button
                   variant="contained"
                   color="primary"
@@ -84,13 +83,13 @@ function ForgotPassword() {
                   disabled={_.isEmpty(dirtyFields) || !isValid}
                   type="submit"
                 >
-                  Send reset link
+                  이메일 보내기
                 </Button>
               </form>
-
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <div className="flex flex-col items-center justify-center pt-32 pb-24">
                 <Link className="font-normal" to="/users/login">
-                  Go back to login
+                  로그인 화면으로 돌아가기
                 </Link>
               </div>
             </CardContent>

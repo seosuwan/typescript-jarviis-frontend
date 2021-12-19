@@ -81,11 +81,8 @@ export default function Register3Page() {
                     <img className='login-img' src={require("features/user/images/paper-pencil.png").default} />
                     <div className="border-l-1 mr-4 w-1 h-40" />
                     <div>
-                      <Typography className="text-24 font-semibold logo-text" color="inherit">
-                      </Typography>
                       <Typography
-                        class="text-16 tracking-widest -mt-8 font-700"
-                        color="textSecondary"
+                        color=" #356859"
                       >
                         회원가입
                       </Typography>
@@ -95,7 +92,7 @@ export default function Register3Page() {
                 <form
                   name="registerForm"
                   noValidate
-                  className="flex flex-col justify-center w-full"
+                  className="fromStyle"
                   onSubmit={handleSubmit(async (data) => { await dispatch(joinRequest({
                      ...data,
                     //  user_interests: document.getElementsByName('user_interests'),

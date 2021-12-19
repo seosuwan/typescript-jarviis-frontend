@@ -82,7 +82,7 @@ export default function AdminLogin() {
                     className="text-16 tracking-widest -mt-8 font-700"
                     color="textSecondary"
                   >
-                    로그인
+                    관리자 로그인
                   </Typography>
                 </div>
               </div>

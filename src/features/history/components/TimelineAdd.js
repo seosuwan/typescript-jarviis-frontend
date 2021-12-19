@@ -62,6 +62,7 @@ export default function TimelineAdd() {
                 <LocalizationProvider dateAdapter={AdapterDateFns} sx={{ width: '20ch' }}>
                 <Controller
                         name="log_date"
+                        label="날씨"
                         control={control}
                         render={({ field }) => (
                     <DateTimePicker
@@ -72,12 +73,12 @@ export default function TimelineAdd() {
                             // setDate(newValue);
                             // alert(`바껴야되는value :: ${date}`);
                         // }}
-                        // value={dateFormat(date)}
                         renderInput={(field) => <TextField {...field} />
                     }
                     />)}/>
 
                 </LocalizationProvider>
+                
                 <FormControl sx={{ width: '15ch' }}>
                     <InputLabel id="weather-select-label">날씨</InputLabel>
                     <Controller

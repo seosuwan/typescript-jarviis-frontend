@@ -87,7 +87,7 @@ export default function Login3Page() {
                 <div/>
                 <div>
                   <span>
-                    Login
+                    로그인
                   </span>
                 </div>
               </div>
@@ -149,7 +149,7 @@ export default function Login3Page() {
               </Button>
             
               <div>
-                <Link className="font-normal" to="/users/forPwd">
+                <Link className="font-normal" to="/users/ForgotPassword">
                   비밀번호를 잊어버리셨나요?
                 </Link>
               </div>

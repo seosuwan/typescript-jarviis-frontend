@@ -5,6 +5,7 @@ import { MyPage } from 'features/common';
 import 'features/common/style/LayOutStyle.scss'
 import 'features/common/style/Button.scss'
 import { Chatbot } from 'features/chatbot';
+import Snow from './Snow';
 
 
 
@@ -13,6 +14,7 @@ const LayOut = (props) => {
 
   return (
     <div class="wrapper">
+      <Snow></Snow>
       <div class="container">
         <div class="header"><Header /></div>
         <div class="menu"><MyPage /></div>
