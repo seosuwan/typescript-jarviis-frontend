@@ -8,12 +8,11 @@ const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
   const teamMemberData = 
   [
       {
-        "contents": "기사시험 보기",
-        "location":"비트캠프", 
+        "contents": "비트캠프 방문",
+        "location":"비트캠프 서초본원", 
         "routine": null,
-        "start":"2021-12-24 ",
-        "end":"2021-12-24"
-        // "routine":
+        "start":"2021-12-23 ",
+        "end":"2021-12-23"
       },
       {
         "contents": "자기소개서 작성",
