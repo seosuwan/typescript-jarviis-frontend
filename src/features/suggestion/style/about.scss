@@ -100,7 +100,7 @@
 }
 
 .team-wrapper {
-  background-color: #f9f7e8;
+  // background-color: #f9f7e8;
   .team-img {
     position: relative;
 
@@ -112,14 +112,14 @@
       background: #fff none repeat scroll 0 0;
       left: 0;
       opacity: 0;
-      padding: 10px;
+      padding: 0;
       position: absolute;
       right: 0;
       text-align: center;
-      top: 70%;
+      top: 170%;
       transform: translateY(-50%);
       transition: all 0.6s ease 0s;
-      width: 100%;
+      // width: 100%;
       z-index: 5;
 
       a {
@@ -152,7 +152,8 @@
     }
   }
   .team-content {
-    padding: 70px 9px 43px;
+    background-color: #f9f7e8;
+    padding: 25px 9px 43px;
     color: black;
     h4 {
       font-size: 18px;
@@ -163,12 +164,13 @@
     span {
       font-size: 15px;
       font-style: italic;
+      display: block;
     }
   }
   &:hover .team-action {
-    top: 146%;
+    top: 320%;
     opacity: 1;
-    width: 380px;
+    width: 100px;
   }
 }
 
@@ -200,7 +202,7 @@
   .team-area {
     width: 53vh;
     margin-left: 5vh;
-    margin-top: -57vh;
+    margin-top: -77vh;
   }
   .team-wrapper:hover .team-action {
     width: 621px;
@@ -210,7 +212,7 @@
   .team-area {
     width: 41vh;
     margin-left: -3vh;
-    margin-top: -75vh;
+    margin-top: -100vh;
   }
   .team-wrapper:hover .team-action {
     width: 364px;
@@ -220,7 +222,7 @@
   .team-area {
     width: 33vh;
     margin-left: -11vh;
-    margin-top: -81vh;
+    margin-top: -90vh;
   }
   .team-wrapper:hover .team-action {
     width: 261px;
@@ -230,7 +232,7 @@
   .team-area {
     width: 46vh;
     margin-left: -9vh;
-    margin-top: -106vh;
+    margin-top: -126vh;
   }
   .team-wrapper:hover .team-action {
     width: 371px;
@@ -240,7 +242,7 @@
   .team-area {
     width: 37vh;
     margin-left: -11vh;
-    margin-top: -110vh;
+    margin-top: -130vh;
   }
   .team-wrapper:hover .team-action {
     width: 295px;

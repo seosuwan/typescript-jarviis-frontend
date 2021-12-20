@@ -200,7 +200,7 @@
 .team-wrapper:hover .team-action {
   top: 146%;
   opacity: 1;
-  width: 380px;
+  width: 350px;
 }
 
 .single-mission h3 {
@@ -235,7 +235,7 @@
     margin-top: -57vh;
   }
   .team-wrapper:hover .team-action {
-    width: 621px;
+    width: 601px;
   }
 }
 
@@ -246,7 +246,7 @@
     margin-top: -75vh;
   }
   .team-wrapper:hover .team-action {
-    width: 364px;
+    width: 330px;
   }
 }
 

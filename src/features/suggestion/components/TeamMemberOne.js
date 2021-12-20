@@ -1,19 +1,44 @@
 import PropTypes from "prop-types";
 import React from "react";
-import teamMemberData from "../data/team-member-one.json";
+// import teamMemberData from "../data/team-member-one.json";
 import TeamMemberOneSingle from "./TeamMemberOneSingle";
 
+
 const TeamMemberOne = ({ spaceTopClass, spaceBottomClass }) => {
+  const teamMemberData = 
+  [
+      {
+        "contents": "기사시험 보기",
+        "location":"비트캠프", 
+        "routine": null,
+        "start":"2021-12-24 ",
+        "end":"2021-12-24"
+        // "routine":
+      },
+      {
+        "contents": "자기소개서 작성",
+        "location": null,
+        "routine": [
+            "월",
+            "수"
+        ],
+        "start": [
+            "2021-12-20",
+            "2021-12-22"
+        ],
+        "end": null,
+        "type": "ROUTINE"
+    }
+    ]
   return (
-    <div
-      className={`team-area ${spaceTopClass ? spaceTopClass : ""} ${
-        spaceBottomClass ? spaceBottomClass : ""
-      }`}
-    >
-     
+    // <div
+    //   className={`team-area ${spaceTopClass ? spaceTopClass : ""} ${
+    //     spaceBottomClass ? spaceBottomClass : ""
+    //   }`}
+    // >
+     <div className="team-area">
         <div className="">
-          {teamMemberData &&
-            teamMemberData.map((single, key) => {
+          {teamMemberData.map((single, key) => {
               return (
                 <TeamMemberOneSingle
                   data={single}
