@@ -9,10 +9,8 @@ export default function About(){
 
   return (
     <LayOut>
-      <AppTasks/>
-    <Fragment>
-        <TeamMemberOne />
-    </Fragment>
+      <AppTasks/> 
+      <TeamMemberOne />
     </LayOut>
   );
 };
